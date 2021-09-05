@@ -1,0 +1,34 @@
+\section{
+    Ряд Лорана. Полюс и существенно особая точка. \\
+    Вычеты. Основная теорема о вычетах и ее применение. 
+}
+
+1. \textbf{Ряд Лорана} в конечной точке 
+${\displaystyle z_{0}\in \mathbb {C} }$ — функциональный ряд по целым степеням ${\displaystyle (z-z_{0})}$
+ над полем комплексных чисел:
+${\displaystyle \sum _{n=-\infty }^{+\infty }c_{n}(z-z_{0})^{n},\quad }$
+\begin{itemize}
+    \item ряд ${\displaystyle \sum _{n=0}^{+\infty }c_{n}(z-z_{0})^{n}}$
+    называется правильной частью,
+    \item ряд ${\displaystyle \sum _{n=-\infty }^{-1}{c_{n}}{(z-z_{0})^{n}}}$
+    называется главной частью.
+\end{itemize}
+
+2. Изолированная особая точка ${\displaystyle z_{0}}$ называется \textbf{полюсом} функции 
+${\displaystyle f(z)}$, голоморфной в некоторой проколотой окрестности этой точки,
+если существует предел ${\displaystyle \lim _{z\to {z_{0}}}f(z)=\infty }$
+
+3. Для комплекснозначной функции ${\displaystyle f(z)}$ в области 
+${\displaystyle D\subseteq \mathbb {C} }$, регулярной в некоторой проколотой
+окрестности точки ${\displaystyle a\in D}$, её \textbf{вычетом} в точке ${\displaystyle a}$ называется число:
+
+$${\displaystyle \mathop {\mathrm {Res} } _{a}\,f(z)=\lim _{\rho \to 0}{1 \over {2\pi i}}\int \limits _{|z-a|=\rho }\!f(z)\,dz}$$
+
+4. \textbf{Основная теорема о вычетах}
+Если функция ${\displaystyle f}$ аналитична в некоторой замкнутой односвязной области 
+${\displaystyle {\overline {G}}\subset \mathbb {C} }$, за исключением конечного числа 
+особых точек ${\displaystyle a_{1},a_{2},\dots ,a_{n}}$, из которых ни одна не принадлежит
+граничному контуру ${\displaystyle \partial G}$, то справедлива следующая формула:
+
+$${\displaystyle ~\int \limits _{\partial G}f(z)\,dz=2\pi i\sum _{k=1}^{n}\mathop {\mathrm {res} } _{z=a_{k}}f(z),}$$
+где ${\displaystyle \mathop {\mathrm {res} } _{z=a_{k}}f}$ — вычет функции ${\displaystyle f}$ в точке ${\displaystyle a_{k}}$.
