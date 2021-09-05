@@ -1,0 +1,45 @@
+\section{
+    Степенные ряды в действительной и комплексной области. \\
+    Радиус сходимости. Теорема Коши-Адамара. Теорема Абеля. \\
+    Свойства степенных рядов (почленное интегрирование и дифференцирование). \\
+    Разложение элементарных функций. 
+}
+
+1. \textbf{Степенной ряд}
+
+${\displaystyle F(X)=\sum \limits _{n=0}^{\infty }a_{n}X^{n}}$,в котором коэффициенты 
+${\displaystyle {a_{n}}}$ берутся из некоторого кольца ${\displaystyle {R}}$.
+
+2. \textbf{Радиус сходимости}
+
+$\displaystyle R = \varlimsup _{n \to \infty} | \frac{a_n}{a_{n+1}}| = \varlimsup _{n \to \infty} \frac{1}{{\sqrt[{n}]{|a_n|}}}$ 
+в круге которого $\displaystyle |x - x_0| < R$ ряд абсолютно сходится, а вне него расходится 
+
+3. \textbf{Теорема Абеля}
+
+Пусть ряд ${\displaystyle \Sigma \,a_{n}x^{n}}$ 
+сходится в точке ${\displaystyle {x_{0}}}$. 
+Тогда этот ряд сходится абсолютно в круге ${\displaystyle {|x|<|x_{0}|}}$
+и равномерно по ${\displaystyle {x}}$ на любом компактном подмножестве этого круга.
+
+4. \textbf{Теорема Коши-Адамара}
+
+Пусть ${\displaystyle \sum _{\nu =0}^{+\infty }a_{\nu }(z-z_{0})^{\nu }}$
+ — степенной ряд с радиусом сходимости ${\displaystyle R}$. Тогда:
+ \begin{enumerate}
+     \item если верхний предел ${\displaystyle \varlimsup \limits _{\nu \to +\infty }{\sqrt[{\nu }]{|a_{\nu }|}}}$
+     существует и положителен, то ${\displaystyle R={\frac {1}{\varlimsup \limits _{\nu \to +\infty }{\sqrt[{\nu }]{|a_{\nu }|}}}}}$
+     \item если ${\displaystyle \varlimsup \limits _{\nu \to +\infty }{\sqrt[{\nu }]{|a_{\nu }|}}=0}$, 
+     то ${\displaystyle R=+\infty }$
+     \item если верхнего предела ${\displaystyle \varlimsup \limits _{\nu \to +\infty }{\sqrt[{\nu }]{|a_{\nu }|}}}$
+     не существует, то ${\displaystyle R=0}$.
+ \end{enumerate}
+
+5. Свойства
+\begin{enumerate}
+    \item \textbf{Дифференцирование}
+    Пусть дан ряд $f$ с радиусом сходимости $R > 0$, функция $f$ непрерывна внутри круга:
+    $ f'\left( x \right) = \large\frac{d}{{dx}}\normalsize{a_0} + \large\frac{d}{{dx}}\normalsize{a_1}x + \large\frac{d}{{dx}}\normalsize{a_2}{x^2} +  \ldots  = {a_1} + 2{a_2}x + 3{a_3}{x^2} +  \ldots  = \sum\limits_{n = 1}^\infty  {n{a_n}{x^{n - 1}}}$
+    \item \textbf{Интегрирование}
+    $\large\int\limits_b^x\normalsize {f\left( t \right)dt}  = \large\int\limits_b^x\normalsize {{a_0}dt}  + \large\int\limits_b^x\normalsize {{a_1}tdt}  + \large\int\limits_b^x\normalsize {{a_2}{t^2}dt}  +  \ldots  + \large\int\limits_b^x\normalsize {{a_n}{t^n}dt}  +  \ldots$
+\end{enumerate}
