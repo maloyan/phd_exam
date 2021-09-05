@@ -1,0 +1,54 @@
+\section{
+    Ряды и последовательности функций. Равномерная сходимость. \\
+    Признак Вейерштрасса. Свойства равномерно сходящихся рядов \\
+    (непрерывность суммы, почленное интегрирование и дифференцирование). 
+}
+
+1. \textbf{Функциональные ряды и последовательности}
+
+$\displaystyle \sum _{{k=1}}^{{\infty }}{u_{k}}(x)$ - функциональный ряд, каждый элемент явяется функцией
+
+${\displaystyle \ {S_{n}}(x)=\sum _{k=1}^{n}{u_{k}}(x)}$— n-ная частичная сумма.
+
+2. \textbf{Поточечная сходимость}
+
+Функциональная последовательность ${\displaystyle \ {u_{k}}(x)}$
+сходится поточечно к функции ${\displaystyle \ {u}(x)}$, если 
+${\displaystyle \forall x\in E\;\;\;\exists \lim _{k\rightarrow \infty }\ {u_{k}}(x)=\ {u}(x)}$
+
+3. \textbf{Равномерная сходимость}
+
+Существует функция ${\displaystyle \ u(x):E\mapsto \mathbb {C} }$
+такая, что: ${\displaystyle \ \sup \mid {u_{k}}(x)-u(x)\mid {\stackrel {k\rightarrow \infty }{\longrightarrow }}0,~~x\in E}$
+
+Факт равномерной сходимости последовательности ${\displaystyle \ {u_{k}}(x)}$
+ к функции ${\displaystyle \ u(x)}$ записывается: 
+ ${\displaystyle \ {u_{k}}(x)\rightrightarrows u(x)}$
+
+4. \textbf{Признак Вейерштрасса}
+
+Пусть ${\displaystyle \exists a_{n} : \forall x\in X : |u_{n}(x)|<a_{n}}$, кроме того, 
+ряд ${\displaystyle \sum _{n=1}^{\infty }a_{n}}$ сходится. 
+Тогда ряд ${\displaystyle \sum _{n=1}^{\infty }u_{n}(x)}$ сходится 
+на множестве ${\displaystyle X}$ абсолютно и равномерно.
+
+5. \textbf{Свойства равномерно сходящихся рядов}
+\begin{itemize}
+    \item Если $\displaystyle \{f_n\}$ и $\displaystyle \{g_n\}$ равномерно сходятся на множестве, то и 
+    $\displaystyle \{f_n + g_n\}$, и $\displaystyle \{\alpha f_n\},~\alpha \in \mathbb {R}$ 
+    тоже равномерно сходятся на этом множестве
+   
+    \item Если \textbf{последовательность интегрируемых} по Риману (по Лебегу) функций 
+    ${\displaystyle f_{n} \rightrightarrows f}$ \textbf{равномерно сходится} на отрезке ${\displaystyle [a,b]}$, 
+    то эта функция $\displaystyle f$ \textbf{также интегрируема} по Риману (по Лебегу), и \\
+    ${\displaystyle \forall x\in [a,b] :~\lim _{n\to \infty }\int \limits _{a}^{x}f_{n}(t)dt=\int \limits _{a}^{x}f(t)dt}$ 
+    и сходимость последовательности функций
+    ${\displaystyle \int \limits _{a}^{x}f_{n}(t)dt \rightrightarrows \int \limits _{a}^{x}f(t)dt}$
+    на отрезке ${\displaystyle [a,b]}$.
+
+    \item Если последовательность непрерывно дифференцируемых на отрезке ${\displaystyle [a,b]}$ 
+    \textbf{функций сходится} ${\displaystyle \{f_{n}\} \rightarrow x_{0}}$, 
+    a последовательность их \textbf{производных равномерно сходится} на ${\displaystyle [a,b]}$,
+    то последовательность ${\displaystyle \{f_{n}\}}$ \textbf{также равномерно сходится} 
+    на ${\displaystyle [a,b]}$, её предел является непрерывно дифференцируемой на этом отрезке функцией.
+\end{itemize}
