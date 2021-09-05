@@ -1,0 +1,37 @@
+\section{
+    Мера множества. Измеримые функции. Интеграл Лебега и его основные свойства.
+}
+
+1. \textbf{Мера множества}
+
+Пусть задано множество ${\displaystyle X}$ с некоторым выделенным классом подмножеств 
+${\displaystyle {\mathcal {F}}}$
+
+Функция ${\displaystyle \mu \colon {\mathcal {F}}\to [0,\;\infty ]}$ называется мерой 
+(иногда объёмом), если она удовлетворяет следующим аксиомам:
+\begin{enumerate}
+    \item ${\displaystyle \mu (\varnothing )=0}$ — мера пустого множества равна нулю;
+    \item Для любых непересекающихся множеств ${\displaystyle A,B\in {\mathcal {F}},} {\displaystyle A\cap B=\varnothing }$
+    
+    $\mu (A\cup B)=\mu (A)+\mu (B)$ - мера объединения непересекающихся множеств равна сумме мер этих множеств (аддитивность, конечная аддитивность).
+\end{enumerate}
+
+2. \textbf{Измеримое множество}
+
+Пусть ${\displaystyle (X,{\mathcal {F}})}$ и 
+${\displaystyle (Y,{\mathcal {G}})}$ — два множества с выделенными алгебрами подмножеств. 
+
+Тогда функция ${\displaystyle f:X\to Y}$ называется измеримой, если прообраз любого множества из ${\displaystyle {\mathcal {G}}}$ принадлежит 
+${\displaystyle {\mathcal {F}}}$, то есть
+${\displaystyle \forall B\in {\mathcal {G}},\;f^{-1}(B)\in {\mathcal {F}}}$
+
+3. \textbf{Интеграл Лебега}
+
+Дано пространство с мерой ${\displaystyle (X,{\mathcal {F}},\mu )}$, 
+и на нём определена измеримая функция ${\displaystyle f\colon (X,{\mathcal {F}})\to (\mathbb {R} ,{\mathcal {B}}(\mathbb {R} ))}$.
+
+Пусть ${\displaystyle f}$ — произвольная измеримая функция,  $A\in {\mathcal  {F}}$ 
+произвольное измеримое множество. Тогда по определению
+${\displaystyle \int \limits _{A}f(x)\,\mu (dx)=\int \limits _{X}f(x)\,\mathbf {1} _{A}(x)\,\mu (dx)}$, 
+где ${\displaystyle \mathbf {1} _{A}(x)}$ — индикатор-функция множества ${\displaystyle A}$.
+

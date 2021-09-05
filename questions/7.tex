@@ -1,0 +1,56 @@
+\section{
+    Собственные и несобственные интегралы, зависящие от параметра. \\
+    Равномерная сходимость по параметрам и ее признаки. \\
+    Непрерывность, интегрирование и дифференцирование интегралов по параметру.
+}
+
+1. \textbf{Собственный интеграл}
+
+Определенный интеграл называется собственным, если область интегрирования и функция интегрирования являются ограниченными
+
+2. \textbf{Несобственный интеграл}
+
+Определённый интеграл называется \textbf{несобственным}, 
+если выполняется по крайней мере одно из следующих условий:
+\begin{itemize}
+    \item Область интегрирования является бесконечной ${\displaystyle [a,+\infty )}$.
+    \item Функция ${\displaystyle f(x)}$ является неограниченной 
+    в окрестности некоторых точек области интегрирования.
+\end{itemize}
+
+\textbf{Несобственный интеграл I рода} ${\displaystyle \exists \lim _{A\to +\infty }\int \limits _{a}^{A}f(x)dx=I\in \mathbb {R} }$
+
+\textbf{Несобственный интеграл II рода} ${\displaystyle \forall \delta >0\Rightarrow \exists \int \limits _{a+\delta }^{b}f(x)dx={\mathcal {I}}(\delta )}$ или 
+${\displaystyle \exists \int \limits _{a}^{b-\delta }f(x)dx={\mathcal {I}}(\delta )}$.
+При этом
+${\displaystyle \exists \lim _{\delta \to 0+0}{\mathcal {I}}(\delta )=I\in \mathbb {R} }$
+
+3. \textbf{Интеграл, зависящий от параметра}
+
+Пусть в двумерном евклидовом пространстве задана область ${\displaystyle {\overline {G}}=\left\{\left(x,y\right)|a\leq x\leq b,c\leq y\leq d\right\}}$
+на которой определена функция ${\displaystyle f(x,y)}$ двух переменных.
+
+Пусть далее, ${\displaystyle \forall y\in \left[c;d\right]\,\exists I\left(y\right)=\int \limits _{a}^{b}f\left(x,y\right)\,dx}$.
+Функция ${\displaystyle I(y)}$ и называется интегралом, зависящим от параметра.
+
+4. Свойства
+
+\begin{itemize}
+    \item \textbf{Непрерывность} 
+
+    Пусть функция ${\displaystyle f(x,y)}$ непрерывна в области 
+    ${\displaystyle {\overline {G}}}$ как функция двух переменных. 
+    Тогда функция ${\displaystyle I\left(y\right)=\int \limits _{a}^{b}f\left(x,y\right)\,dx}$ 
+    непрерывна на отрезке ${\displaystyle [c;d]}$.
+
+    \item \textbf{Дифференцирование под знаком интеграла}
+    Пусть теперь на области ${\displaystyle {\overline {G}}}$ 
+    непрерывна не только функция ${\displaystyle f(x,y)}$, 
+    но и её частная производная ${\displaystyle {\frac {\partial f}{\partial y}}\left(x,y\right)}$.
+    Тогда ${\displaystyle {\frac {d}{dy}}I(y)=\int \limits _{a}^{b}{\frac {\partial f}{\partial y}}\left(x,y\right)\,dx}$
+
+    \item \textbf{Интегрирование под знаком интеграла}
+
+    Если функция ${\displaystyle f(x,y)}$ непрерывна в области ${\displaystyle {\overline {G}}}$, то
+    ${\displaystyle \int \limits _{c}^{d}I(y)\,dy=\int \limits _{a}^{b}\left(\int \limits _{c}^{d}f(x,y)\,dy\right)\,dx}$
+\end{itemize}
